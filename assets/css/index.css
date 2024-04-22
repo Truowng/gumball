@@ -3,6 +3,10 @@
   font-family: "Motley Force";
   src: url(../fonts/Motley-Forces.ttf);
 }
+@font-face {
+  font-family: "Frankfurt";
+  src: url(../fonts/frankfurter.otf);
+}
 @keyframes floater {
   to {
     transform: translateY(-30px);
@@ -17,9 +21,10 @@
 body {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Motley Force";
+  font-family: "Frankfurt";
   background-color: #b3e3f1;
   overflow-x: hidden;
+  letter-spacing: -0.05em;
 }
 
 ul,
@@ -58,7 +63,7 @@ img {
   border-radius: 10px;
   font-size: 20px;
   text-transform: uppercase;
-  font-family: "Motley Force";
+  font-family: "Frankfurt";
   color: #000;
   background: transparent;
   text-align: center;
@@ -82,16 +87,18 @@ img {
 .heading-block .badge {
   padding: 0;
   color: #ff92b5;
-  font-family: "Motley Force";
+  font-family: "Frankfurt";
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
   font-size: 16px;
 }
 .heading-block .title {
-  font-family: "Motley Force";
+  font-family: "Frankfurt";
   font-size: 48px;
   line-height: 69.5px;
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
 }
 @media only screen and (max-width: 480px) {
   .heading-block .title {
@@ -265,7 +272,7 @@ img {
   }
 }
 #banner .heading-block .title {
-  font-family: "Motley Force";
+  font-family: "Frankfurt";
   font-size: 100px;
   font-weight: 700;
   line-height: 76px;
@@ -394,7 +401,7 @@ img {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 20px;
-  font-family: "Motley Force";
+  font-family: "Frankfurt";
 }
 @media only screen and (max-width: 767px) {
   #airdrop .about-content .join-button {
@@ -411,7 +418,87 @@ img {
 #roadmap {
   margin-top: 140px;
 }
+#roadmap .heading-block {
+  margin-bottom: 40px;
+}
+#roadmap .heading-block .title {
+  text-align: center;
+}
 #roadmap .roadmap-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+@media only screen and (max-width: 991px) {
+  #roadmap .roadmap-wrapper {
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #roadmap .roadmap-wrapper {
+    flex-direction: column;
+  }
+  #roadmap .roadmap-wrapper:nth-of-type(3) {
+    flex-direction: column-reverse;
+  }
+}
+#roadmap .roadmap-wrapper:last-child {
+  margin-bottom: 0;
+}
+#roadmap .line {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+}
+@media only screen and (max-width: 991px) {
+  #roadmap .line {
+    display: none;
+  }
+}
+#roadmap .roadmap-image {
+  width: 40%;
+}
+#roadmap .roadmap-content {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 30px;
+}
+@media only screen and (max-width: 480px) {
+  #roadmap .roadmap-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+#roadmap .roadmap-content .title {
+  font-size: 150px;
+  -webkit-text-stroke: 3px #000;
+  color: #fff;
+}
+@media only screen and (max-width: 991px) {
+  #roadmap .roadmap-content .title {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #roadmap .roadmap-content .title {
+    font-size: 40px;
+  }
+}
+#roadmap .roadmap-content .list .item {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#team {
+  margin-top: 140px;
+}
+#team .team-wrapper {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -419,21 +506,21 @@ img {
   margin-top: 80px;
 }
 @media only screen and (max-width: 991px) {
-  #roadmap .roadmap-wrapper {
+  #team .team-wrapper {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 @media only screen and (max-width: 767px) {
-  #roadmap .roadmap-wrapper {
+  #team .team-wrapper {
     flex-direction: column;
     align-items: center;
   }
 }
-#roadmap .heading-block .title {
+#team .heading-block .title {
   text-align: center;
 }
-#roadmap .roadmap-item {
+#team .team-item {
   max-width: 292px;
   width: 100%;
   display: flex;
@@ -443,16 +530,16 @@ img {
   flex-direction: column;
 }
 @media only screen and (max-width: 991px) {
-  #roadmap .roadmap-item {
+  #team .team-item {
     flex: 0 0 40%;
   }
 }
 @media only screen and (max-width: 767px) {
-  #roadmap .roadmap-item {
+  #team .team-item {
     flex: initial;
   }
 }
-#roadmap .roadmap-item .heading {
+#team .team-item .heading {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -460,37 +547,36 @@ img {
   gap: 20px;
   flex-direction: column;
 }
-#roadmap .roadmap-item .heading .icon {
+#team .team-item .heading .icon {
   max-width: 180px;
 }
-#roadmap .roadmap-item .heading .title {
-  font-size: 24px;
-  line-height: 30px;
-  font-family: "Motley Force";
+#team .team-item .heading .title {
+  font-size: 35px;
+  font-family: "Frankfurt";
 }
-#roadmap .roadmap-item .list {
+#team .team-item .list {
   margin-top: 33px;
   list-style: disc;
   width: -moz-fit-content;
   width: fit-content;
 }
 @media only screen and (max-width: 991px) {
-  #roadmap .roadmap-item .list {
+  #team .team-item .list {
     list-style: none;
   }
 }
-#roadmap .roadmap-item .list .item {
+#team .team-item .list .item {
   margin-bottom: 10px;
 }
-#roadmap .roadmap-item .list .item:last-child {
+#team .team-item .list .item:last-child {
   margin-bottom: 0;
 }
 @media only screen and (max-width: 991px) {
-  #roadmap .roadmap-item .list .item {
+  #team .team-item .list .item {
     text-align: center;
   }
 }
-#roadmap .roadmap-item .line {
+#team .team-item .line {
   margin-top: -5px;
   width: 90%;
 }
@@ -520,9 +606,6 @@ img {
 #tokenomics .tokenomics-image {
   width: 100%;
 }
-#tokenomics .tokenomics-image img {
-  transform: scaleX(-1);
-}
 @media only screen and (max-width: 991px) {
   #tokenomics .tokenomics-image {
     margin-top: 50px;
@@ -548,7 +631,7 @@ img {
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 40px;
-  font-family: "Motley Force";
+  font-family: "Frankfurt";
   color: #1d90fd;
 }
 @media only screen and (max-width: 991px) {
@@ -567,7 +650,7 @@ img {
   margin-top: 25px;
 }
 #tokenomics .tokenomics-content .list .item {
-  font-family: "Motley Force";
+  font-family: "Frankfurt";
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 30px;

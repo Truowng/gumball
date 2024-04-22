@@ -3,6 +3,10 @@
   font-family: "Motley Force";
   src: url(../fonts/Motley-Forces.ttf);
 }
+@font-face {
+  font-family: "Frankfurt";
+  src: url(../fonts/frankfurter.otf);
+}
 
 // COLOR
 
@@ -20,6 +24,7 @@ $font-fira: "Fira Sans", sans-serif;
 $font-robo: "Roboto", sans-serif;
 $font-exo: "Exo 2", sans-serif;
 $font-motley: "Motley Force";
+$font-frankfurt: "Frankfurt";
 
 // FUNCTION
 @mixin flex($j, $a, $g) {

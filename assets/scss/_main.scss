@@ -7,9 +7,10 @@
 body {
   font-size: 16px;
   font-weight: 400;
-  font-family: $font-motley;
+  font-family: $font-frankfurt;
   background-color: $blue-2;
   overflow-x: hidden;
+  letter-spacing: -0.05em;
 }
 
 ul,
@@ -48,7 +49,7 @@ img {
   border-radius: 10px;
   font-size: 20px;
   text-transform: uppercase;
-  font-family: $font-motley;
+  font-family: $font-frankfurt;
   color: $black;
   background: transparent;
   text-align: center;
@@ -73,16 +74,18 @@ img {
   .badge {
     padding: 0;
     color: $pink;
-    font-family: $font-motley;
+    font-family: $font-frankfurt;
     font-weight: 500;
     line-height: 24px;
     text-transform: uppercase;
     font-size: 16px;
   }
   .title {
-    font-family: $font-motley;
+    font-family: $font-frankfurt;
     font-size: 48px;
     line-height: 69.5px;
+    color: $white;
+    -webkit-text-stroke: 2px $black;
     @include mobile {
       font-size: 36px;
       line-height: 40px;
@@ -226,7 +229,7 @@ img {
       }
     }
     .title {
-      font-family: $font-motley;
+      font-family: $font-frankfurt;
       font-size: 100px;
       font-weight: 700;
       line-height: 76px;
@@ -331,7 +334,7 @@ img {
       display: block;
       width: fit-content;
       margin-top: 20px;
-      font-family: $font-motley;
+      font-family: $font-frankfurt;
       @include landscape-phone {
         margin-left: auto;
         margin-right: auto;
@@ -347,7 +350,72 @@ img {
 
 #roadmap {
   margin-top: 140px;
+  .heading-block {
+    margin-bottom: 40px;
+    .title {
+      text-align: center;
+    }
+  }
   .roadmap-wrapper {
+    @include flex(space-around, center, 50px);
+    margin-bottom: 50px;
+    position: relative;
+    @include tablet {
+      gap: 30px;
+    }
+    @include landscape-phone {
+      flex-direction: column;
+      &:nth-of-type(3) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .line {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    @include tablet {
+      display: none;
+    }
+  }
+  .roadmap-image {
+    width: 40%;
+  }
+  .roadmap-content {
+    @include flex(unset, center, 30px);
+    @include mobile {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .title {
+      font-size: 150px;
+      -webkit-text-stroke: 3px $black;
+      color: $white;
+      @include tablet {
+        font-size: 80px;
+      }
+      @include mobile {
+        font-size: 40px;
+      }
+    }
+    .list {
+      .item {
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+#team {
+  margin-top: 140px;
+  .team-wrapper {
     @include flex(center, start, 40px);
     margin-top: 80px;
     @include tablet {
@@ -364,7 +432,7 @@ img {
       text-align: center;
     }
   }
-  .roadmap-item {
+  .team-item {
     max-width: 292px;
     width: 100%;
     @include flex(unset, center, unset);
@@ -384,9 +452,8 @@ img {
         max-width: 180px;
       }
       .title {
-        font-size: 24px;
-        line-height: 30px;
-        font-family: $font-motley;
+        font-size: 35px;
+        font-family: $font-frankfurt;
       }
     }
     .list {
@@ -439,9 +506,7 @@ img {
   }
   .tokenomics-image {
     width: 100%;
-    img {
-      transform: scaleX(-1);
-    }
+
     @include tablet {
       margin-top: 50px;
     }
@@ -462,7 +527,7 @@ img {
       font-size: 24px;
       line-height: 26px;
       margin-bottom: 40px;
-      font-family: $font-motley;
+      font-family: $font-frankfurt;
       color: $blue;
       @include tablet {
         font-size: 20px;
@@ -480,7 +545,7 @@ img {
     .list {
       margin-top: 25px;
       .item {
-        font-family: $font-motley;
+        font-family: $font-frankfurt;
         font-size: 16px;
         line-height: 30px;
         margin-bottom: 30px;
