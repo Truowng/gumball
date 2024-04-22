@@ -265,6 +265,11 @@ img {
   }
 }
 @media only screen and (max-width: 767px) {
+  #banner .banner-wrapper {
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
   #banner .heading-block .badge {
     margin-left: auto;
     margin-right: auto;
@@ -332,7 +337,6 @@ img {
 }
 @media only screen and (max-width: 767px) {
   #banner .banner-image {
-    margin-top: 50px;
     width: 100%;
   }
 }
@@ -418,6 +422,11 @@ img {
 #roadmap {
   margin-top: 140px;
 }
+@media only screen and (max-width: 767px) {
+  #roadmap {
+    margin-top: 100px;
+  }
+}
 #roadmap .heading-block {
   margin-bottom: 40px;
 }
@@ -498,12 +507,22 @@ img {
 #team {
   margin-top: 140px;
 }
+@media only screen and (max-width: 767px) {
+  #team {
+    margin-top: 100px;
+  }
+}
 #team .team-wrapper {
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 40px;
   margin-top: 80px;
+}
+@media only screen and (max-width: 767px) {
+  #team .team-wrapper {
+    margin-top: 40px;
+  }
 }
 @media only screen and (max-width: 991px) {
   #team .team-wrapper {
@@ -599,6 +618,11 @@ img {
 }
 #tokenomics .heading-block {
   margin-bottom: 60px;
+}
+@media only screen and (max-width: 767px) {
+  #tokenomics .heading-block {
+    margin-bottom: 30px;
+  }
 }
 #tokenomics .heading-block .title {
   text-align: center;

@@ -219,6 +219,9 @@ img {
       flex-direction: column;
       gap: 100px;
     }
+    @include landscape-phone {
+      gap: 30px;
+    }
   }
   .heading-block {
     .badge {
@@ -279,7 +282,6 @@ img {
       transform: scaleX(-1);
     }
     @include landscape-phone {
-      margin-top: 50px;
       width: 100%;
     }
   }
@@ -350,6 +352,9 @@ img {
 
 #roadmap {
   margin-top: 140px;
+  @include landscape-phone {
+    margin-top: 100px;
+  }
   .heading-block {
     margin-bottom: 40px;
     .title {
@@ -415,9 +420,15 @@ img {
 
 #team {
   margin-top: 140px;
+  @include landscape-phone {
+    margin-top: 100px;
+  }
   .team-wrapper {
     @include flex(center, start, 40px);
     margin-top: 80px;
+    @include landscape-phone {
+      margin-top: 40px;
+    }
     @include tablet {
       flex-wrap: wrap;
       justify-content: center;
@@ -500,6 +511,9 @@ img {
   margin-top: 140px;
   .heading-block {
     margin-bottom: 60px;
+    @include landscape-phone {
+      margin-bottom: 30px;
+    }
     .title {
       text-align: center;
     }
