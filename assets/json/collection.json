@@ -1,4 +1,45 @@
 {
+  "name": "Original-Gumball",
+  "description": "Gumball is a cute, mischievous, and humorous cat who embarks on exciting adventures with his sister Darwin in the town of Elmore. Every NFT has unique qualities, including equipment, rarity, and...",
+  "image": "https://gumball-ton.xyz/assets/images/Original-Gum.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "None"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Pale Pink"
+    }
+  ]
+}
+
+
+{
+  "name": "420-Gumball",
+  "description": "Gumball is a cute, mischievous, and humorous cat who embarks on exciting adventures with his sister Darwin in the town of Elmore. Every NFT has unique qualities, including equipment, rarity, and...",
+  "image": "https://gumball-ton.xyz/assets/images/420-Gum.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "None"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Vodka"
+    }
+  ]
+}
+
+{
   "name": "Naughty-Gumball",
   "description": "Gumball is a cute, mischievous, and humorous cat who embarks on exciting adventures with his sister Darwin in the town of Elmore. Every NFT has unique qualities, including equipment, rarity, and...",
   "image": "https://gumball-ton.xyz/assets/images/Naughty-Gum.png",
