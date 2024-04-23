@@ -12,6 +12,18 @@ closeBtn.addEventListener("click", () => {
   menu.classList.remove("active");
 });
 
+const musicControl = document.querySelector("#music-control");
+const music = document.querySelector("audio");
+
+const play = () => {
+  musicControl.setAttribute("data-status", "play");
+  music.play();
+};
+const pause = () => {
+  musicControl.setAttribute("data-status", "pause");
+  music.pause();
+};
+
 const slider = new Swiper("#banner .swiper", {
   direction: "horizontal",
   speed: 300,
@@ -19,6 +31,23 @@ const slider = new Swiper("#banner .swiper", {
   grabCursor: true,
   autoplay: {
     delay: 3000,
+  },
+});
+
+const marquee = new Swiper("#marquee .swiper", {
+  direction: "horizontal",
+  speed: 10000,
+  slidesPerView: "auto",
+  spaceBetween: 25,
+  autoplay: {
+    delay: 0,
+  },
+  loop: true,
+  allowTouchMove: false,
+  breakpoints: {
+    767: {
+      speed: 8000,
+    },
   },
 });
 

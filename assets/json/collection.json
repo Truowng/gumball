@@ -1,0 +1,104 @@
+{
+  "name": "Naughty-Gumball",
+  "description": "Gumball is a cute, mischievous, and humorous cat who embarks on exciting adventures with his sister Darwin in the town of Elmore. Every NFT has unique qualities, including equipment, rarity, and...",
+  "image": "https://gumball-ton.xyz/assets/images/Naughty-Gum.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Beanie"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Light Gray"
+    }
+  ]
+}
+
+
+{
+  "name": "Birthday-Gumball",
+  "description": "Gumball is a cute, mischievous, and humorous cat who embarks on exciting adventures with his sister Darwin in the town of Elmore. Every NFT has unique qualities, including equipment, rarity, and...",
+  "image": "https://gumball-ton.xyz/assets/images/Birthday-Gum.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Birthday"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Orange-Yellow"
+    }
+  ]
+}
+
+
+{
+  "name": "Skater-Gumball",
+  "description": "Gumball is a cute, mischievous, and humorous cat who embarks on exciting adventures with his sister Darwin in the town of Elmore. Every NFT has unique qualities, including equipment, rarity, and...",
+  "image": "https://gumball-ton.xyz/assets/images/Skater-Gum.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Helmet"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Dutch White"
+    }
+  ]
+}
+
+
+{
+  "name": "Detective-Gumball",
+  "description": "Gumball is a cute, mischievous, and humorous cat who embarks on exciting adventures with his sister Darwin in the town of Elmore. Every NFT has unique qualities, including equipment, rarity, and...",
+  "image": "https://gumball-ton.xyz/assets/images/Detective-Gum.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Fuchama"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Light Moss Green"
+    }
+  ]
+}
+
+
+
+{
+  "name": "Playboy-Gumball",
+  "description": "Gumball is a cute, mischievous, and humorous cat who embarks on exciting adventures with his sister Darwin in the town of Elmore. Every NFT has unique qualities, including equipment, rarity, and...",
+  "image": "https://s.getgems.io/nft/c/62695cb92d780b7496caea3a/nft/56/629b9349e034e8e582cf6448.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Snapback"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Medium Spring Bud"
+    }
+  ]
+}

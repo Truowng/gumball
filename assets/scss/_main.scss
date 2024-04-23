@@ -99,6 +99,42 @@ img {
   }
 }
 
+#music-control {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  width: 25px;
+  height: 25px;
+  z-index: 10;
+  mix-blend-mode: difference;
+  @include landscape-phone {
+    left: 25px;
+  }
+  &[data-status="pause"] {
+    .pause {
+      display: none;
+    }
+  }
+  &[data-status="play"] {
+    .play {
+      display: none;
+    }
+  }
+  .music-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    svg {
+      width: 100%;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+
 #header {
   backdrop-filter: blur(3px);
   @include tablet {
@@ -201,6 +237,68 @@ img {
     background-color: transparent;
     @include tablet {
       display: block;
+    }
+  }
+}
+
+#marquee {
+  .marquee-wrapper {
+    @include flex(unset, center, 5px);
+    padding: 10px;
+    background-color: rgba($color: #000000, $alpha: 0.25);
+  }
+  .title {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f2db8a;
+    border: 2px solid #000;
+
+    transition: all ease 0.3s;
+    &:hover {
+      background-color: #6dbfd5;
+      padding: 15px 40px;
+      @include landscape-phone {
+        padding: 10px;
+      }
+      .text {
+        transform: scale(1.3) rotate(3deg);
+      }
+    }
+
+    .text {
+      display: block;
+      font-size: 18px;
+      color: $white;
+      -webkit-text-stroke: 1.5px #000;
+      white-space: nowrap;
+      transition: all ease 0.3s;
+      @include landscape-phone {
+        display: none;
+      }
+    }
+    .icon {
+      width: 25px;
+      display: none;
+      @include landscape-phone {
+        display: block;
+      }
+      svg {
+        width: 100%;
+      }
+    }
+  }
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  .swiper-slide {
+    width: fit-content;
+    padding-right: 25px;
+    border-right: 1px solid #eee;
+    .text {
+      font-size: 18px;
+      color: $white;
+      -webkit-text-stroke: 1px #000;
+      white-space: nowrap;
     }
   }
 }

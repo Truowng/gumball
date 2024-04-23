@@ -121,6 +121,73 @@
       </div>
     </header>
     <main id="content">
+      <div id="music-control" data-status="pause">
+        <audio>
+          <source src="./assets/audio/gumball.mp3" type="audio/mpeg" />
+        </audio>
+        <button class="music-button play" onclick="play()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+              d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+            />
+          </svg>
+        </button>
+        <div class="music-button pause" onclick="pause()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path
+              d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"
+            />
+          </svg>
+        </div>
+      </div>
+      <section id="marquee">
+        <div class="marquee-wrapper">
+          <a href="#" class="title">
+            <span class="text">Write your feeling</span>
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"
+                />
+              </svg>
+            </span>
+          </a>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p class="text">
+                  I’m ben from norway. Today I lost $20,000 by long Ton. Damned
+                  😔🤮🤕🫠😩
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="text">
+                  I’m ben from norway. Today I lost $20,000 by long Ton. Damned
+                  😔🤮🤕🫠😩
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="text">
+                  I’m ben from norway. Today I lost $20,000 by long Ton. Damned
+                  😔🤮🤕🫠😩
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="text">
+                  I’m ben from norway. Today I lost $20,000 by long Ton. Damned
+                  😔🤮🤕🫠😩
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="text">
+                  I’m ben from norway. Today I lost $20,000 by long Ton. Damned
+                  😔🤮🤕🫠😩
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="banner">
         <div class="container">
           <div class="banner-wrapper">
@@ -227,6 +294,11 @@
               </div>
               <div class="swiper-slide">
                 <div class="partner-item">
+                  <img src="./assets/images/airdrop-finder.png" alt="Partner" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partner-item">
                   <img src="./assets/images/getgems.png" alt="Partner" />
                 </div>
               </div>
@@ -259,6 +331,11 @@
               <div class="swiper-slide">
                 <div class="partner-item">
                   <img src="./assets/images/coingecko.png" alt="Partner" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partner-item">
+                  <img src="./assets/images/airdrop-finder.png" alt="Partner" />
                 </div>
               </div>
               <div class="swiper-slide">
