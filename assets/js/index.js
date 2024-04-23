@@ -36,7 +36,7 @@ const slider = new Swiper("#banner .swiper", {
 
 const marquee = new Swiper("#marquee .swiper", {
   direction: "horizontal",
-  speed: 10000,
+  speed: 32000,
   slidesPerView: "auto",
   spaceBetween: 25,
   autoplay: {
@@ -46,7 +46,7 @@ const marquee = new Swiper("#marquee .swiper", {
   allowTouchMove: false,
   breakpoints: {
     767: {
-      speed: 8000,
+      speed: 20000,
     },
   },
 });

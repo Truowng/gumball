@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -292,17 +296,29 @@ img {
   }
   .swiper-slide {
     width: fit-content;
-    padding-right: 25px;
-    border-right: 1px solid #eee;
-    .text {
+    // padding-right: 25px;
+    @include flex(unset, center, 25px);
+    .line {
+      height: 20px;
+      width: 1px;
+      background-color: #eee;
+    }
+    .text,
+    .link {
       font-size: 18px;
       color: $white;
       -webkit-text-stroke: 1px #000;
       white-space: nowrap;
+      transition: all ease 0.3s;
+    }
+    .link {
+      color: #ffd37f;
+      &:hover {
+        transform: scale(1.04);
+      }
     }
   }
 }
-
 #banner {
   margin-top: 100px;
   @include flex(space-between, center, unset);

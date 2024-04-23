@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -331,14 +335,29 @@ img {
 #marquee .swiper-slide {
   width: -moz-fit-content;
   width: fit-content;
-  padding-right: 25px;
-  border-right: 1px solid #eee;
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 25px;
 }
-#marquee .swiper-slide .text {
+#marquee .swiper-slide .line {
+  height: 20px;
+  width: 1px;
+  background-color: #eee;
+}
+#marquee .swiper-slide .text,
+#marquee .swiper-slide .link {
   font-size: 18px;
   color: #fff;
   -webkit-text-stroke: 1px #000;
   white-space: nowrap;
+  transition: all ease 0.3s;
+}
+#marquee .swiper-slide .link {
+  color: #ffd37f;
+}
+#marquee .swiper-slide .link:hover {
+  transform: scale(1.04);
 }
 
 #banner {
